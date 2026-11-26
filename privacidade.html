@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · KartBravo</title>
+<style>
+  :root { --bg:#0b0d12; --card:#141821; --ink:#e9ecf2; --dim:#9aa3b2; --accent:#e62b21; --line:#262c38; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f5f8; --card:#fff; --ink:#151821; --dim:#5a6272; --line:#dde1e8; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  header { border-left:5px solid var(--accent); padding-left:14px; margin-bottom:28px; }
+  h1 { font-size:1.7rem; margin:0; } h2 { font-size:1.15rem; margin:32px 0 8px; }
+  .sub { color:var(--dim); margin:4px 0 0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:4px 20px 16px; margin-top:16px; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; } td, th { text-align:left; vertical-align:top; padding:8px 6px; border-top:1px solid var(--line); }
+  th { color:var(--dim); font-weight:600; } a { color:var(--accent); }
+  .resumo li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Política de Privacidade do KartBravo</h1>
+  <p class="sub">Versão de 26 de novembro de 2026</p>
+</header>
+
+<section class="resumo">
+  <h2>Resumo</h2>
+  <ul>
+    <li>O KartBravo é um jogo de kart para celular, feito por um desenvolvedor independente no Brasil.</li>
+    <li>Não tem anúncios, não tem compras dentro do jogo e não vende nem compartilha dados para marketing.</li>
+    <li>Não pedimos nome real, e-mail, telefone, localização nem documentos.</li>
+    <li>Seu perfil e seus recordes ficam guardados só no seu celular.</li>
+    <li>Seu apelido só aparece no ranking global se você permitir. Para menores de 18 anos, essa opção começa desligada.</li>
+    <li>Você pode apagar tudo a qualquer momento em <strong>Ajustes › Privacidade › Apagar meus dados</strong>.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>1. Quem é o responsável</h2>
+  <p>O controlador dos dados é o desenvolvedor independente do KartBravo (pessoa física, Brasil). Contato para qualquer assunto de privacidade, inclusive pedidos de titulares: <a href="https://github.com/minekingsbrcontato-ctrl/kartbravo/issues">página de contato do projeto</a>.</p>
+
+  <h2>2. Quais dados o jogo usa e para quê</h2>
+  <table>
+    <tr><th>Dado</th><th>Para que serve</th><th>Onde fica</th></tr>
+    <tr><td>Apelido escolhido por você</td><td>Identificar você nas salas e, se permitir, no ranking</td><td>No celular; enviado aos jogadores da sala e, se permitir, ao ranking</td></tr>
+    <tr><td>Perfil (cores do macacão, capacete, luvas), acertos do kart, recordes, número de corridas e vitórias</td><td>Funcionamento do jogo e ranking</td><td>No celular; números enviados ao ranking só se permitir</td></tr>
+    <tr><td>Código aleatório do jogador</td><td>Separar sua linha no ranking das dos outros. Não identifica você nem o aparelho.</td><td>No celular e no ranking</td></tr>
+    <tr><td>Faixa de idade (18+ ou menos de 18)</td><td>Aplicar as proteções para menores</td><td>Só no celular</td></tr>
+    <tr><td>Voz (rádio)</td><td>Conversar com os pilotos da sala, só quando você liga o rádio</td><td>Transmitida ao vivo; <strong>não é gravada</strong> nem guardada</td></tr>
+    <tr><td>Endereço de internet (IP) e porta</td><td>Ligar os celulares numa corrida pela internet (os aparelhos se ligam direto, sem servidor do jogo)</td><td>Visto pelos outros pilotos da sala e pelos servidores públicos de salas (seção 4), que outras pessoas também podem acessar; o jogo não guarda</td></tr>
+    <tr><td>Posição do kart na pista</td><td>Mostrar seu kart aos outros pilotos durante a corrida</td><td>Transmitida ao vivo; não é guardada</td></tr>
+  </table>
+  <p>O jogo não coleta localização, contatos, fotos, identificadores de publicidade nem dados de uso para estatística.</p>
+
+  <h2>3. Permissões do celular</h2>
+  <ul>
+    <li><strong>Microfone:</strong> só para o rádio, e só depois que você liga o rádio.</li>
+    <li><strong>Bluetooth:</strong> só para corridas por Bluetooth com aparelhos pareados.</li>
+    <li><strong>Internet e rede local:</strong> corridas em rede, ranking e verificação de atualizações.</li>
+    <li><strong>Instalar atualizações:</strong> o jogo baixa a versão nova e abre o instalador do Android; quem confirma é você.</li>
+  </ul>
+
+  <h2>4. Serviços de terceiros</h2>
+  <ul>
+    <li><strong>Servidores públicos de mensagens (MQTT)</strong> — HiveMQ, Eclipse Mosquitto e EMQX: anunciam salas online, combinam a conexão entre celulares e guardam o ranking. Ficam fora do Brasil, e o que é enviado a eles pode ser visto por outros usuários desses servidores. Por isso o jogo só envia apelido, números de corrida e dados técnicos da sala.</li>
+    <li><strong>Google (STUN):</strong> informa ao seu celular o próprio endereço de internet para a corrida online.</li>
+    <li><strong>GitHub:</strong> hospeda as atualizações e esta página. Ao baixar uma atualização, o GitHub recebe seu endereço de internet, como em qualquer site.</li>
+  </ul>
+  <p>Isso envolve transferência internacional de dados (LGPD, art. 33), feita para executar o serviço que você pediu: jogar online.</p>
+
+  <h2>5. Bases legais (LGPD)</h2>
+  <ul>
+    <li>Execução do serviço pedido por você (jogar, corridas em rede, rádio): art. 7º, V.</li>
+    <li>Consentimento para aparecer no ranking global e para o rádio com pilotos da internet: art. 7º, I. Você pode retirar a qualquer momento.</li>
+    <li>Para crianças e adolescentes, o tratamento segue o melhor interesse deles (art. 14) e o Estatuto Digital da Criança e do Adolescente (Lei 15.211/2025).</li>
+  </ul>
+
+  <h2>6. Crianças e adolescentes</h2>
+  <p>No primeiro acesso o jogo pergunta a faixa de idade. Para quem tem menos de 18 anos:</p>
+  <ul>
+    <li>corridas pela internet, rádio com pilotos da internet e apelido no ranking global ficam bloqueados até que um responsável autorize; corridas por Wi-Fi e Bluetooth, com pessoas por perto, continuam liberadas;</li>
+    <li>a sala criada por um menor não leva o apelido dele no nome;</li>
+    <li>apelidos e nomes de sala com palavrões são trocados automaticamente;</li>
+    <li>o jogo não tem compras, caixas de recompensa (loot boxes), anúncios nem chat de texto;</li>
+    <li>qualquer piloto pode ser silenciado no rádio, dentro da sala, com um toque.</li>
+  </ul>
+  <p>Pedimos que pais e responsáveis leiam a tela de privacidade junto com o jogador.</p>
+
+  <h2>7. Por quanto tempo</h2>
+  <ul>
+    <li>Dados no celular: até você apagar os dados no jogo ou desinstalar o app.</li>
+    <li>Ranking global: até você desligar a opção ou usar "Apagar meus dados". O jogo então apaga sua linha no servidor.</li>
+    <li>Voz e posição na pista: não são guardadas.</li>
+  </ul>
+
+  <h2>8. Seus direitos</h2>
+  <p>Você pode confirmar quais dados existem, corrigir (trocar o apelido), retirar consentimentos e apagar tudo pelo próprio jogo. Para outros pedidos, use o contato da seção 1. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+  <h2>9. Segurança</h2>
+  <p>O jogo guarda o mínimo possível e não tem contas. Cada piloto recebe uma chave de sessão aleatória na sala, que impede outra pessoa de se passar por ele; salas fechadas usam senha de 6 números com limite de tentativas; a ligação com os servidores de salas é cifrada quando a rede permite. As atualizações só são baixadas do repositório oficial, são conferidas antes de instalar, e o Android só aceita a versão nova se ela tiver a mesma assinatura digital da instalada. Em corridas abertas com desconhecidos, não diga no rádio informações pessoais como nome completo, endereço ou escola.</p>
+
+  <h2>10. Mudanças</h2>
+  <p>Se esta política mudar, a data no topo será atualizada e o jogo avisará na tela de privacidade.</p>
+</section>
+</main>
+</body>
+</html>
